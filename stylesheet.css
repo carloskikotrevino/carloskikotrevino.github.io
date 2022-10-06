@@ -1,7 +1,10 @@
 body {
     background-color: powderblue;
+    border: 50px white;
+    margin: 20px;
 }
 
 .link:hover {
     color: orange;
 }
+
