@@ -2,6 +2,6 @@ body {
     background-color: powderblue;
 }
 
-a:hover {
+.link:hover {
     color: orange;
 }
