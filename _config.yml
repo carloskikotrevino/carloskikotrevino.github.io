@@ -112,11 +112,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Carlos Federico Trevino"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "This is my portfolio."
+  location         : "Austin, Texas"
+  email            : "carlos.trevino359@utexas.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
