@@ -5,8 +5,9 @@ layout: archive
 {{ content }}
 
 <section class="biography">
-  <h2 class="section__title">Biography</h2>
-  <p class="biography__content">
+  <h2 class="section__title">A little about me</h2>
+  <div class="biography__content">
+    <div class="biography_text">
     <!-- Add your biography content here -->
     Hello, my name is Kiko and I am a recent graduate from the Cockrell School of Engineering at UT Austin, where I received my B.S. in Electrical and Computer Engineering with a specialization in Software Engineering and Design and a minor is Business Administration.
 
@@ -15,9 +16,10 @@ My main academic and career interests lie in back-end software development, mobi
 In addition to studying at the University of Texas, I have ventured out by taking courses at the University of California, Los Angeles, as well as in Barcelona, Greece, and Paris. I am extremely passionate about technology and innovation, while being considered a hard-working, determined individual who will go above and beyond to find any solution. 
 
 Currently, I am seeking a software engineering internship position.
-  </p>
-
-  <img src="../assets/images/Tower Pic.JPG" alt="Your Photo" class="biography__photo">
+    </div>
+    <img src="../assets/images/Tower Pic.JPG" alt="Your Photo" class="biography__photo">
+  </div>
+</section>
 
   <section class="hobbies">
     <h2 class="section__title">Personal Interests and Hobbies</h2>
@@ -33,7 +35,7 @@ Currently, I am seeking a software engineering internship position.
       <!-- Add more photos as needed -->
     </div>
   </section>
-</section>
+
 
 <!-- <section class="experience">
   <h2 class="section__title">Experience</h2>
@@ -133,19 +135,39 @@ Currently, I am seeking a software engineering internship position.
     margin-bottom: 1em;
   }
 
+  .biography__content {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+
   .project__photo {
     width: 100%;
     height: auto;
     margin-top: 1em;
   }
 
+  .biography__text {
+  flex: 1;
+  font-size: 1em;
+}
+
   .biography__photo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    width: 300px;
+  height: auto;
+  border-radius: 5px;
   }
 
+  @media (max-width: 768px) {
+  .biography__content {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+  }
+
+  .biography__photo {
+    width: 100%;
+  }
 
   .experience__list {
     list-style: none;
