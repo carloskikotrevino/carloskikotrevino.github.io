@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Carlos Trevino's Personal Website"
+title                    : "CFT"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Carlos Federico Trevino II"
@@ -114,9 +114,9 @@ analytics:
 author:
   name             : "Carlos Federico Trevino"
   avatar           : assets/images/LinkedIn Pic 2.jpeg
-  bio              : "This is my portfolio."
+  bio              : "UT Austin ECE Class of 24"
   location         : "Austin, Texas"
-  email            : "carlos.trevino359@utexas.edu"
+  email            : # "carlos.trevino359@utexas.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
