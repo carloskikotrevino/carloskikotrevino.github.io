@@ -16,7 +16,21 @@ In addition to studying at the University of Texas, I have ventured out by takin
 
 Currently, I am seeking a software engineering internship position.
   </p>
- <img src="../assets/images/Tower Pic.JPG" alt="Your Photo" class="biography__photo"> 
+
+  <img src="../assets/images/Tower Pic.JPG" alt="Your Photo" class="biography__photo">
+
+  <section class="hobbies">
+    <h2 class="section__title">Personal Interests and Hobbies</h2>
+    <div class="collage">
+      <img src="../assets/images/croatia w dad.jpeg" alt="Hobby Photo 1" class="collage__photo">
+      <img src="../assets/images/intramural tennis.jpeg" alt="Hobby Photo 2" class="collage__photo">
+      <img src="../assets/images/fishing 1.jpg" alt="Hobby Photo 3" class="collage__photo">
+      <img src="../assets/images/surfing w dad.jpg" alt="Hobby Photo 4" class="collage__photo">
+      <!-- Add more photos as needed -->
+    </div>
+  </section>
+  
+  <img src="../assets/images/Tower Pic.JPG" alt="Your Photo" class="biography__photo"> 
 </section>
 
 <!-- <section class="experience">
@@ -158,6 +172,24 @@ Currently, I am seeking a software engineering internship position.
     width: 100%;
     height: auto;
     display: block;
+  }
+
+  .section__title {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  .collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1em;
+  }
+
+  .collage__photo {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
   }
 </style>
 
