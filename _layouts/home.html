@@ -135,10 +135,15 @@ Currently, I am seeking a software engineering internship position.
     margin-bottom: 1em;
   }
 
+  .biography__title {
+  font-size: 1.5em !important;
+  margin-bottom: 0.5em !important;
+  }
+
   .biography__content {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5em;
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 1.5em !important;
   }
 
   .project__photo {
@@ -148,26 +153,26 @@ Currently, I am seeking a software engineering internship position.
   }
 
   .biography__text {
-  flex: 1;
-  font-size: 0.9em;
-  line-height: 1.4em;
-}
+    flex: 1 !important;
+    font-size: 0.9em !important;
+    line-height: 1.4em !important;
+  }
 
   .biography__photo {
-    width: 150px;
-    height: auto;
-    border-radius: 5px;
+    width: 150px !important; /* Smaller width for the photo */
+    height: auto !important;
+    border-radius: 5px !important;
   }
 
   @media (max-width: 768px) {
   .biography__content {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column !important;
+    align-items: flex-start !important;
     }
   }
 
   .biography__photo {
-    width: 100%;
+    width: 100% !important;
   }
 
   .experience__list {
