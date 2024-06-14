@@ -49,6 +49,14 @@ layout: archive
         <a href="../assets/images/Carlos Trevino Resume.pdf" class="resume-button" target="_blank">My Resume</a>
       </div>
     </div>
+    <div class="toc">
+      <h4>Table of Contents</h4>
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#things-i-can-do">Things I Can Do</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -225,6 +233,41 @@ layout: archive
 
 
 <style>
+
+.toc {
+  position: sticky;
+  top: 2em;
+  align-self: flex-start;
+  background: #fff;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+}
+
+.toc h4 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+}
+
+.toc li {
+  margin-bottom: 0.5em;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #007acc;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
   .hobbies .section__title,
 .projects .section__title {
   font-size: 1.5em !important;
