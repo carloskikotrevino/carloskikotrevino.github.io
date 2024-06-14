@@ -293,27 +293,32 @@ layout: archive
 }
 
 .biography__content {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-gap: 1.5em;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5em;
 }
 
 .biography__photo {
-  float: left;
-  width: 250px;
+  width: 100%;
   height: auto;
-  margin-right: 1.5em;
-  margin-bottom: 1.5em;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .biography__text {
-  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto;
+  gap: 1.5em;
 }
 
 .about-me, .skills, .resume {
-  margin-bottom: 1.5em;
+  background: #fff;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-me h3, .skills h3 {
@@ -366,17 +371,15 @@ layout: archive
 }
 
 @media (max-width: 768px) {
-  .biography__photo {
-    float: none;
-    display: block;
-    margin: 0 auto 1.5em auto;
-    width: 100%;
+  .biography__content {
+    grid-template-columns: 1fr;
   }
 
-  .biography__content {
-    padding: 0 1em;
+  .biography__photo {
+    width: 100%;
   }
 }
+
 
 </style>
 
