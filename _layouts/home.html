@@ -37,6 +37,20 @@ Currently, I am seeking a software engineering internship position.
   <!-- <img src="path/to/your/experience-photo.jpg" alt="Experience Photo" class="experience__photo"> -->
 <!-- </section> -->
 
+<section class="education">
+  <div class="education__content">
+    <img src="../assets/images/university of texas logo.png" alt="University Logo" class="education__logo">
+    <div class="education__details">
+      <h2 class="education__title">Undergraduate Studies</h2>
+      <p class="education__university">The University of Texas at Austin</p>
+      <p class="education__major"><strong>Major:</strong> Electrical and Computer Engineering</p>
+      <p class="education__minor"><strong>Minor:</strong> Business</p>
+      <p class="education__specialization"><strong>Specialization:</strong> Software Engineering and Design</p>
+    </div>
+  </div>
+</section>
+
+
 <section class="projects">
   <h2 class="section__title">Projects</h2>
   <div class="projects__grid">
@@ -132,6 +146,60 @@ Currently, I am seeking a software engineering internship position.
   font-size: 1.5em !important;
   margin-bottom: 0.5em !important;
 }
+
+.education {
+  background-color: #f7f7f7;
+  padding: 1.5em 0;
+}
+
+.education__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.education__logo {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 5px;
+}
+
+.education__details {
+  flex: 1;
+}
+
+.education__title {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.education__university,
+.education__major,
+.education__minor,
+.education__specialization {
+  font-size: 1em;
+  margin: 0.2em 0;
+}
+
+@media (max-width: 768px) {
+  .education__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education__logo {
+    width: 80px; /* Adjust size for smaller screens */
+  }
+
+  .education__details {
+    text-align: center;
+  }
+}
+
 
   .experience__description, .project__description, .hobbies__description {
     font-size: 1em;
