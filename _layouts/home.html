@@ -22,7 +22,6 @@ layout: archive
           Currently, I am seeking a software engineering internship position.
         </p>
       </div>
-      <div class="clear"></div>
       <div class="skills">
         <h3>Things I Can Do</h3>
         <ul>
@@ -295,30 +294,30 @@ layout: archive
 }
 
 .biography__content {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 1.5em;
+  text-align: center;
 }
 
 .biography__photo {
-  float: left;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   height: auto;
-  margin-right: 1.5em;
-  margin-bottom: 1.5em;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 1.5em;
 }
 
 .biography__text {
-  overflow: hidden;
-}
-
-.clear {
-  clear: both;
+  text-align: left;
 }
 
 .about-me, .skills, .resume {
+  background: #fff;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5em;
 }
 
@@ -373,13 +372,13 @@ layout: archive
 
 @media (max-width: 768px) {
   .biography__photo {
-    float: none;
-    display: block;
-    margin: 0 auto 1.5em auto;
     width: 100%;
   }
-}
 
+  .biography__text {
+    text-align: center;
+  }
+}
 
 
 </style>
