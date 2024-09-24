@@ -38,10 +38,10 @@ layout: archive
         <h3>Skills</h3>
         <ul>
           <li></li>
-          <li>Backend Programming (Python, Java, C/C++, JavaScript)</li>
+          <li>Backend Programming (Python, Java, C/C++, JavaScript, TypeScript)</li>
           <li>Frontend Development (HTML/CSS, React Native)</li>
           <li>Machine Learning Modeling</li>
-          <li>Software Developer Tools (Git/Github, Linux, MobaXTerm, MongoDB Compass, Android Studio)</li>
+          <li>Software Developer Tools (Git, Google Cloud Platform, Jira, Linux, MobaXTerm, MongoDB Compass, Android Studio, VS Code)</li>
           <li>Communication & Collaboration</li>
         </ul>
       </div>
@@ -69,7 +69,22 @@ layout: archive
  <!-- </ul> -->
   <!-- <img src="path/to/your/experience-photo.jpg" alt="Experience Photo" class="experience__photo"> -->
 <!-- </section> -->
-
+<section class="experience">
+  <h2 class="section__title">Experience</h2>
+  <div class="experience__item">
+    <img src="../assets/images/aristocrat.jpg" alt="Experience Photo" class="experince__photo">
+    <h3 class="experience__item">Software Engineering Intern</h3>
+      <p class="experience__stack">Aristocrat</p>
+      <p class="experience__dates">Aug - May 2024</p>
+      <p class="experience__description">
+        <!-- Add your project description here -->
+        <ul>
+          <li>Developed UI features for internal tools within the Mercury Studio suite, enchancing user experience and improving workflow efficiency using React and TypeScript.</li>
+          <li>Optimized game assets within the Mercury Studio tool, streamlining asset management and contributing to overall system performance.</li>
+        </ul>
+      </p> 
+  </div>
+</section>
 
 
 <section class="projects">
@@ -79,7 +94,7 @@ layout: archive
       <img src="../assets/images/FoodVentory Title Final.jpeg" alt="Project Photo" class="project__photo">
       <h3 class="project__title">FoodVentory</h3>
       <p class="project__stack">Group Project | React Native, Firebase</p>
-      <p class="project__dates">August - May 2024</p>
+      <p class="project__dates">Aug 2023 - May 2024</p>
       <a href="https://drive.google.com/file/d/141mshtWl1glDdppBwMJ7LMwZOx_JRIKC/view?usp=sharing">FoodVentory Video</a>
       <p class="project__description">
         <!-- Add your project description here -->
@@ -226,7 +241,8 @@ layout: archive
 
 <style>
   .hobbies .section__title,
-.projects .section__title {
+.projects .section__title,
+.experience .section__title {
   font-size: 1.5em !important;
   margin-bottom: 0.5em !important;
 }
@@ -291,12 +307,12 @@ layout: archive
 }
 
 
-  .experience__description, .project__description, .hobbies__description {
+  .experience__description, .project__description, .hobbies__description, .experience__description {
     font-size: 1em;
     margin-bottom: 1em;
   }
 
-  .project__photo {
+  .project__photo, .experience__photo {
     width: 100%;
     height: auto;
     margin-top: 1em;
@@ -318,7 +334,7 @@ layout: archive
     gap: 2em;
   }
 
-  .project__item {
+  .project__item, .experience__item {
     flex: 1 1 300px;
     border: 1px solid #ccc;
     padding: 1em;
@@ -326,7 +342,7 @@ layout: archive
     max-width: 100%;
   }
 
-  .project__photo {
+  .project__photo, .experience__photo {
     width: 100%;
     height: auto;
     display: block;
